@@ -7,8 +7,15 @@
 </head>
 <body>
 <div class="container" id="app">
-    <div class="col-sm-6">
+    <div class="col-12">
         <h1 id="header">{{ message }}</h1>
+    </div>
+    <div class="col-12">
+        <iframe id="map-frame" v-bind:src="src"></iframe>
+        <br/><label>DEBUG: </label><span>{{ src }}</span>
+    </div>
+    <div class="col-12">
+        <button v-on:click="changeSrc">Change IFrame</button>
     </div>
     <osm src="http://www.baunatal.de"></osm>
 </div>
