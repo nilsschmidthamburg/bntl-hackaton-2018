@@ -18,7 +18,8 @@
     <br/><label>DEBUG: </label><span>{{ src }}</span>
     <br/>
 
-    <label><input type="radio" v-model="src" value="https://overpass-turbo.eu/map.html?Q=area%5Bname%3D%22Baunatal%22%5D%3B%0A(way(area)%5Bhighway%5D%5Bliving_street%5D%3B%3E%3B)%3B%0Aout%20meta%3B%0A">Verkehrsberuhigter Bereich (Spielstraßen)</label><br/>
+    <label><input type="radio" v-model="src" value="https://overpass-turbo.eu/map.html?Q=area%5Bname%3D%22Baunatal%22%5D%3B%0A(way(area)%5Bhighway%3Dliving_street%5D%3B%3E%3B)%3B%0Aout%20meta%3B">Alle Straßen</label><br/>
+    <label><input type="radio" v-model="src" value="https://overpass-turbo.eu/map.html?Q=area%5Bname%3D%22Baunatal%22%5D%3B%0A(way(area)%5Bhighway%3Dliving_street%5D%3B%3E%3B)%3B%0Aout%20meta%3B">Verkehrsberuhigter Bereich (Spielstraßen)</label><br/>
     <label><input type="radio" v-model="src" value="https://overpass-turbo.eu/map.html?Q=area%5Bname%3D%22Baunatal%22%5D%3B%0A(way(area)%5Bhighway%5D%5Bmaxspeed%3D30%5D%3B%3E%3B)%3B%0Aout%20meta%3B%0A">Tempo 30</label><br/>
     <label><input type="radio" v-model="src" value="https://overpass-turbo.eu/map.html?Q=area%5Bname%3D%22Baunatal%22%5D%3B%0A(way(area)%5Bhighway%5D%5Bmaxspeed%3D50%5D%3B%3E%3B)%3B%0Aout%20meta%3B%0A">Tempo 50</label><br/>
     <label><input type="radio" v-model="src" value="https://overpass-turbo.eu/map.html?Q=area%5Bname%3D%22Baunatal%22%5D%3B%0A(way(area)%5Bhighway%5D%5Bmaxspeed%3D100%5D%3B%3E%3B)%3B%0Aout%20meta%3B%0A">Viel zu schnell (> 50 km/h)</label><br/>
