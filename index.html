@@ -6,11 +6,16 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
-<div class="container" id="main">
+<div class="container" id="app">
     <div class="col-sm-6">
         <h1 id="header">{{ message }}</h1>
     </div>
+    <osm src="http://www.baunatal.de"></osm>
 </div>
+
+<template id="iframe">
+    <iframe v-bind:src="src"></iframe>
+</template>
 
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
